@@ -1,0 +1,42 @@
+<!-- Demo version: 2018.19.25 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>WebRTC Scalable Broadcast using RTCMultiConnection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- <script src="menu.js"></script> -->
+</head>
+<body>
+ 
+
+  <!-- <h1>
+    WebRTC Scalable Broadcast using RTCMultiConnection
+    <p class="no-mobile">
+      Use peer-to-peer protocol to broadcast your video over 20+ users.
+    </p>
+  </h1> -->
+
+  <section class="make-center">
+      <p style="margin: 0; padding: 0; padding-bottom: 20px;">
+          <div class="make-center">
+          <input type="text" id="broadcast-id" value="room-xyz" autocorrect=off autocapitalize=off size=20>
+          <button id="join">Join Broadcast</button>
+          <div class="make-center" id="broadcast-viewers-counter"></div>
+      </p>
+
+      <video id="video-preview" autoplay></video>
+  </section>
+
+<script src="RTCMultiConnection.min.js"></script>
+<script src="node_modules/webrtc-adapter/out/adapter.js"></script>
+<script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="main.js">
+// recording is disabled because it is resulting for browser-crash
+// if you enable below line, please also uncomment above "RecordRTC.js"
+</script>
+  <!-- <script src="https://cdn.webrtc-experiment.com/common.js"></script> -->
+</body>
+</html>
